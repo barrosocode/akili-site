@@ -1,0 +1,604 @@
+---
+import "../styles/global.css";
+---
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#FBF9ED" />
+        <meta name="color-scheme" content="light" />
+        <title>Akili | Aprender de verdade, no seu ritmo</title>
+        <meta name="description" content="Cronograma de estudos, lições curtas e cinco camadas de prática para seu filho aprender de verdade antes das provas." />
+        <link rel="icon" href="/icon-light-32x32.png" media="(prefers-color-scheme: light)" />
+        <link rel="icon" href="/icon-dark-32x32.png" media="(prefers-color-scheme: dark)" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-icon.png" />
+    </head>
+    <body class="bg-cream font-sans text-ink antialiased">
+        <main class="min-h-screen bg-cream font-sans text-ink antialiased selection:bg-sage selection:text-ink">
+            <header class="bg-cream">
+                <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-10">
+                    <a href="#inicio" class="inline-flex items-center gap-2.5 text-ink" aria-label="Akili, início"
+                        ><span class="grid size-10 place-items-center rounded-2xl bg-leaf text-white shadow-sm"
+                            ><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles" aria-hidden="true">
+                                <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path>
+                                <path d="M20 2v4"></path>
+                                <path d="M22 4h-4"></path>
+                                <circle cx="4" cy="20" r="2"></circle></svg></span
+                        ><span class="text-[1.55rem] font-extrabold tracking-[-0.07em]">akili</span></a
+                    >
+                    <nav aria-label="Navegação principal" class="flex items-center gap-5">
+                        <a href="#metodo" class="hidden text-sm font-semibold text-muted transition hover:text-ink sm:inline">Como funciona</a
+                        ><a href="#planos" class="inline-flex items-center gap-2 rounded-full border border-ink/10 bg-white px-4 py-2.5 text-xs font-extrabold text-ink transition hover:border-leaf/40 hover:text-forest"
+                            >Ver planos
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path></svg
+                        ></a>
+                    </nav>
+                </div>
+            </header>
+            <section id="inicio" class="overflow-hidden bg-cream">
+                <div class="mx-auto grid max-w-7xl items-center gap-8 px-5 pb-16 pt-7 sm:px-8 sm:pb-20 lg:grid-cols-[1.04fr_0.96fr] lg:gap-5 lg:px-10 lg:pb-24 lg:pt-8">
+                    <div class="relative z-10 max-w-[610px]">
+                        <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-leaf/15 bg-white/75 px-3.5 py-2 text-xs font-bold text-forest shadow-sm"><span class="size-2 rounded-full bg-leaf"></span> Aprender com método muda tudo</div>
+                        <h1 class="text-[clamp(2.8rem,5.3vw,4.75rem)] font-extrabold leading-[1.02] tracking-[-0.065em] text-ink">Ele estudou a tarde inteira. <span class="text-leaf">Por que tirou 5,5?</span></h1>
+                        <p class="mt-6 max-w-[570px] text-lg font-semibold leading-relaxed text-forest sm:text-[1.2rem]">Porque reler e grifar não é aprender. A Akili transforma o conteúdo do trimestre em lições curtas e cinco camadas de prática que só deixam avançar quem realmente entendeu.</p>
+                        <ul class="mt-7 grid gap-3 text-sm font-medium text-muted sm:grid-cols-2 sm:gap-x-5">
+                            <li class="flex items-start gap-2.5">
+                                <span class="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-sage text-leaf"
+                                    ><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span
+                                ><span>Conteúdo do 3º trimestre alinhado à BNCC</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-sage text-leaf"
+                                    ><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span
+                                ><span>Cronograma de estudos diário até as provas</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-sage text-leaf"
+                                    ><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span
+                                ><span>Feedback imediato em cada questão</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-sage text-leaf"
+                                    ><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span
+                                ><span>Validado por pedagogos</span>
+                            </li>
+                        </ul>
+                        <div class="mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
+                            <a href="#planos" class="group inline-flex min-h-14 items-center justify-center gap-2 rounded-full bg-orange px-6 py-4 text-center text-sm font-extrabold tracking-wide text-white shadow-[0_12px_30px_-14px_rgba(244,116,30,0.7)] transition hover:-translate-y-0.5 hover:bg-orange/90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-orange"
+                                >QUERO VER OS PLANOS DE ACESSO
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down transition group-hover:translate-y-0.5" aria-hidden="true">
+                                    <path d="M12 5v14"></path>
+                                    <path d="m19 12-7 7-7-7"></path></svg></a
+                            ><span class="text-xs font-medium text-muted">Uma nova forma de estudar, no ritmo dele.</span>
+                        </div>
+                    </div>
+                    <div class="relative mx-auto w-full max-w-[520px] px-5 pb-9 pt-6 sm:px-10">
+                        <div class="absolute left-5 top-10 size-24 rounded-full bg-leaf/10 blur-2xl sm:left-12"></div>
+                        <div class="absolute bottom-10 right-3 size-36 rounded-full bg-leaf/10 blur-3xl"></div>
+                        <div class="relative rounded-[2.4rem] border-[7px] border-ink bg-white p-2.5 shadow-[0_34px_90px_-35px_rgba(30,52,107,0.45)] sm:rotate-[2deg]">
+                            <div class="overflow-hidden rounded-[1.8rem] bg-cream">
+                                <div class="flex items-center justify-between bg-white px-5 pb-4 pt-5">
+                                    <div>
+                                        <p class="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted">Olá, Pedro</p>
+                                        <p class="mt-1 text-lg font-bold tracking-tight text-ink">Seu plano de hoje</p>
+                                    </div>
+                                    <div class="grid size-10 place-items-center rounded-full bg-sage text-leaf">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap" aria-hidden="true">
+                                            <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path>
+                                            <path d="M22 10v6"></path>
+                                            <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="px-4 pb-4 pt-3">
+                                    <div class="flex items-center justify-between rounded-2xl bg-white p-4 shadow-sm">
+                                        <div class="flex items-center gap-3">
+                                            <span class="grid size-10 place-items-center rounded-xl bg-sage text-leaf"
+                                                ><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days" aria-hidden="true">
+                                                    <path d="M8 2v4"></path>
+                                                    <path d="M16 2v4"></path>
+                                                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                                    <path d="M3 10h18"></path>
+                                                    <path d="M8 14h.01"></path>
+                                                    <path d="M12 14h.01"></path>
+                                                    <path d="M16 14h.01"></path>
+                                                    <path d="M8 18h.01"></path>
+                                                    <path d="M12 18h.01"></path>
+                                                    <path d="M16 18h.01"></path></svg
+                                            ></span>
+                                            <div>
+                                                <p class="text-xs font-semibold text-muted">CRONOGRAMA PERSONALIZADO</p>
+                                                <p class="mt-1 text-sm font-bold text-ink">2 tópicos para hoje</p>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-muted" aria-hidden="true">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="mt-3 rounded-2xl bg-white p-4 shadow-sm">
+                                        <div class="flex items-center justify-between">
+                                            <div class="flex items-center gap-2 text-sm font-bold text-ink"><span class="size-2 rounded-full bg-leaf"></span> Ciências</div>
+                                            <span class="rounded-full bg-sage px-2.5 py-1 text-[10px] font-bold text-forest">15 min</span>
+                                        </div>
+                                        <p class="mt-3 text-sm font-semibold text-ink">Cadeia alimentar</p>
+                                        <p class="mt-1 text-xs leading-relaxed text-muted">Ideia central · situação concreta · síntese</p>
+                                        <div class="mt-4 flex gap-1.5" aria-label="Progresso da lição: 3 de 5 etapas"><span class="h-1.5 flex-1 rounded-full bg-leaf"></span><span class="h-1.5 flex-1 rounded-full bg-leaf"></span><span class="h-1.5 flex-1 rounded-full bg-leaf"></span><span class="h-1.5 flex-1 rounded-full bg-sage"></span><span class="h-1.5 flex-1 rounded-full bg-sage"></span></div>
+                                        <p class="mt-2 text-[10px] font-medium text-muted">Etapa 3 de 5 · Revisão</p>
+                                    </div>
+                                    <div class="mt-3 grid grid-cols-2 gap-3">
+                                        <div class="rounded-2xl bg-white p-3.5 shadow-sm">
+                                            <div class="flex items-center gap-1.5 text-[10px] font-semibold text-muted">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy text-leaf" aria-hidden="true">
+                                                    <path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path>
+                                                    <path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path>
+                                                    <path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path>
+                                                    <path d="M4 22h16"></path>
+                                                    <path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path>
+                                                    <path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path>
+                                                </svg>
+                                                MEDALHAS
+                                            </div>
+                                            <div class="mt-2 flex items-center gap-1.5 text-sm font-extrabold text-ink">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-medal text-leaf" aria-hidden="true">
+                                                    <path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15"></path>
+                                                    <path d="M11 12 5.12 2.2"></path>
+                                                    <path d="m13 12 5.88-9.8"></path>
+                                                    <path d="M8 7h8"></path>
+                                                    <circle cx="12" cy="17" r="5"></circle>
+                                                    <path d="M12 18v-2h-.5"></path>
+                                                </svg>
+                                                4 conquistas
+                                            </div>
+                                        </div>
+                                        <div class="rounded-2xl bg-white p-3.5 shadow-sm">
+                                            <div class="flex items-center gap-1.5 text-[10px] font-semibold text-muted">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap text-leaf" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg> SEQUÊNCIA
+                                            </div>
+                                            <div class="mt-2 text-sm font-extrabold text-ink">5 dias seguidos</div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3 flex items-center gap-3 rounded-2xl bg-ink p-3.5 text-white">
+                                        <span class="grid size-9 place-items-center rounded-xl bg-white/10"
+                                            ><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-handshake text-sage" aria-hidden="true"><path d="M19.414 14.414C21 12.828 22 11.5 22 9.5a5.5 5.5 0 0 0-9.591-3.676.6.6 0 0 1-.818.001A5.5 5.5 0 0 0 2 9.5c0 2.3 1.5 4 3 5.5l5.535 5.362a2 2 0 0 0 2.879.052 2.12 2.12 0 0 0-.004-3 2.124 2.124 0 1 0 3-3 2.124 2.124 0 0 0 3.004 0 2 2 0 0 0 0-2.828l-1.881-1.882a2.41 2.41 0 0 0-3.409 0l-1.71 1.71a2 2 0 0 1-2.828 0 2 2 0 0 1 0-2.828l2.823-2.762"></path></svg
+                                        ></span>
+                                        <div>
+                                            <p class="text-xs font-bold">Você está no caminho certo!</p>
+                                            <p class="mt-0.5 text-[10px] text-white/65">Mais um tópico dominado.</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check ml-auto text-sage" aria-hidden="true">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <path d="m9 12 2 2 4-4"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mx-auto mt-2 h-1 w-16 rounded-full bg-ink/15"></div>
+                        </div>
+                        <div class="absolute -left-1 bottom-12 hidden items-center gap-2.5 rounded-2xl border border-sage bg-white px-3.5 py-3 shadow-[0_14px_40px_-20px_rgba(30,52,107,0.35)] sm:flex">
+                            <span class="grid size-9 place-items-center rounded-xl bg-sage text-leaf"
+                                ><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg
+                            ></span>
+                            <div>
+                                <p class="text-xs font-bold text-ink">Assunto dominado!</p>
+                                <p class="text-[10px] text-muted">Progresso comprovado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-sage px-5 py-20 sm:px-8 sm:py-24 lg:px-10">
+                <div class="mx-auto max-w-7xl">
+                    <div class="mx-auto max-w-2xl text-center">
+                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-leaf">Se isso acontece, você não está sozinho</p>
+                        <h2 class="mt-4 text-3xl font-extrabold leading-tight tracking-[-0.045em] text-ink sm:text-4xl">Você reconhece alguma destas cenas na sua casa?</h2>
+                    </div>
+                    <div class="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+                        <div class="min-h-44 rounded-3xl border border-white/90 bg-cream p-6 shadow-[0_12px_35px_-30px_rgba(30,52,107,0.5)]">
+                            <span class="grid size-9 place-items-center rounded-full bg-white text-muted/65"
+                                ><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x" aria-hidden="true">
+                                    <path d="M18 6 6 18"></path>
+                                    <path d="m6 6 12 12"></path></svg
+                            ></span>
+                            <p class="mt-5 text-[15px] font-semibold leading-relaxed text-muted">Na véspera ele sabia tudo. Na prova, deu branco.</p>
+                            <span class="mt-4 block text-[10px] font-bold tracking-[0.16em] text-leaf">CENA 0<!-- -->1</span>
+                        </div>
+                        <div class="min-h-44 rounded-3xl border border-white/90 bg-cream p-6 shadow-[0_12px_35px_-30px_rgba(30,52,107,0.5)]">
+                            <span class="grid size-9 place-items-center rounded-full bg-white text-muted/65"
+                                ><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x" aria-hidden="true">
+                                    <path d="M18 6 6 18"></path>
+                                    <path d="m6 6 12 12"></path></svg
+                            ></span>
+                            <p class="mt-5 text-[15px] font-semibold leading-relaxed text-muted">Resolveu a lista inteira, mas a prova tinha perguntas "diferentes".</p>
+                            <span class="mt-4 block text-[10px] font-bold tracking-[0.16em] text-leaf">CENA 0<!-- -->2</span>
+                        </div>
+                        <div class="min-h-44 rounded-3xl border border-white/90 bg-cream p-6 shadow-[0_12px_35px_-30px_rgba(30,52,107,0.5)]">
+                            <span class="grid size-9 place-items-center rounded-full bg-white text-muted/65"
+                                ><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x" aria-hidden="true">
+                                    <path d="M18 6 6 18"></path>
+                                    <path d="m6 6 12 12"></path></svg
+                            ></span>
+                            <p class="mt-5 text-[15px] font-semibold leading-relaxed text-muted">Você pergunta "estudou?" e ele diz "estudei". E você não tem como saber.</p>
+                            <span class="mt-4 block text-[10px] font-bold tracking-[0.16em] text-leaf">CENA 0<!-- -->3</span>
+                        </div>
+                        <div class="min-h-44 rounded-3xl border border-white/90 bg-cream p-6 shadow-[0_12px_35px_-30px_rgba(30,52,107,0.5)]">
+                            <span class="grid size-9 place-items-center rounded-full bg-white text-muted/65"
+                                ><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x" aria-hidden="true">
+                                    <path d="M18 6 6 18"></path>
+                                    <path d="m6 6 12 12"></path></svg
+                            ></span>
+                            <p class="mt-5 text-[15px] font-semibold leading-relaxed text-muted">Começa, para, pega o celular. Duas horas depois, não saiu do lugar.</p>
+                            <span class="mt-4 block text-[10px] font-bold tracking-[0.16em] text-leaf">CENA 0<!-- -->4</span>
+                        </div>
+                    </div>
+                    <div class="mx-auto mt-8 max-w-4xl rounded-[2rem] border border-white bg-cream px-6 py-8 text-center shadow-[0_20px_55px_-38px_rgba(30,52,107,0.4)] sm:px-12 sm:py-10">
+                        <p class="text-xl font-extrabold leading-snug tracking-tight text-forest sm:text-2xl">"Ele é inteligente. Por que estudar parece tão difícil para ele?"</p>
+                        <p class="mt-4 text-sm font-extrabold uppercase tracking-[0.16em] text-leaf">Não é ele. É o método.</p>
+                        <p class="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted sm:text-base">Reler, grifar e refazer a mesma lista cria a ilusão de que aprendeu. O cérebro confunde reconhecer com saber — e a prova é o primeiro lugar onde essa ilusão aparece.</p>
+                    </div>
+                </div>
+            </section>
+            <div id="metodo">
+                <section class="bg-cream px-5 py-20 sm:px-8 sm:py-24 lg:px-10">
+                    <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.76fr_1.24fr] lg:gap-20">
+                        <div class="max-w-lg">
+                            <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-leaf">O método Akili</p>
+                            <h2 class="mt-4 text-3xl font-extrabold leading-tight tracking-[-0.045em] text-ink sm:text-4xl">Aprender de verdade tem prova. E ela acontece antes da prova da escola.</h2>
+                            <p class="mt-5 text-base leading-relaxed text-muted">Cada etapa ajuda seu filho a construir confiança com conhecimento — não só com a sensação de que já viu aquilo antes.</p>
+                            <a href="#planos" class="mt-7 inline-flex items-center gap-2 text-sm font-bold text-forest transition hover:text-leaf"
+                                >Conheça os planos
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path></svg
+                            ></a>
+                        </div>
+                        <div class="grid gap-3 sm:grid-cols-2">
+                            <article class="rounded-3xl border border-ink/5 bg-white p-5 shadow-[0_14px_40px_-34px_rgba(30,52,107,0.5)] sm:p-6">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-extrabold tracking-[0.12em] text-leaf">01</span
+                                    ><span class="grid size-10 place-items-center rounded-xl bg-sage text-leaf"
+                                        ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days" aria-hidden="true">
+                                            <path d="M8 2v4"></path>
+                                            <path d="M16 2v4"></path>
+                                            <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                            <path d="M3 10h18"></path>
+                                            <path d="M8 14h.01"></path>
+                                            <path d="M12 14h.01"></path>
+                                            <path d="M16 14h.01"></path>
+                                            <path d="M8 18h.01"></path>
+                                            <path d="M12 18h.01"></path>
+                                            <path d="M16 18h.01"></path></svg
+                                    ></span>
+                                </div>
+                                <h3 class="mt-5 text-lg font-extrabold leading-snug text-ink">O cronograma nasce das provas dele</h3>
+                                <p class="mt-2.5 text-sm leading-relaxed text-muted">Você informa as datas. A Akili distribui o que estudar, dia a dia. Acabou o "por onde começo?".</p>
+                            </article>
+                            <article class="rounded-3xl border border-ink/5 bg-white p-5 shadow-[0_14px_40px_-34px_rgba(30,52,107,0.5)] sm:p-6">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-extrabold tracking-[0.12em] text-leaf">02</span
+                                    ><span class="grid size-10 place-items-center rounded-xl bg-sage text-leaf"
+                                        ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open-check" aria-hidden="true">
+                                            <path d="M12 21V7"></path>
+                                            <path d="m16 12 2 2 4-4"></path>
+                                            <path d="M22 6V4a1 1 0 0 0-1-1h-5a4 4 0 0 0-4 4 4 4 0 0 0-4-4H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h6a3 3 0 0 1 3 3 3 3 0 0 1 3-3h6a1 1 0 0 0 1-1v-1.3"></path></svg
+                                    ></span>
+                                </div>
+                                <h3 class="mt-5 text-lg font-extrabold leading-snug text-ink">Lição que cabe na atenção</h3>
+                                <p class="mt-2.5 text-sm leading-relaxed text-muted">Quadros curtos — ideia central, situação concreta e síntese. Um foco por vez, sem perder a concentração.</p>
+                            </article>
+                            <article class="rounded-3xl border border-ink/5 bg-white p-5 shadow-[0_14px_40px_-34px_rgba(30,52,107,0.5)] sm:p-6">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-extrabold tracking-[0.12em] text-leaf">03</span
+                                    ><span class="grid size-10 place-items-center rounded-xl bg-sage text-leaf"
+                                        ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target" aria-hidden="true">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <circle cx="12" cy="12" r="6"></circle>
+                                            <circle cx="12" cy="12" r="2"></circle></svg
+                                    ></span>
+                                </div>
+                                <h3 class="mt-5 text-lg font-extrabold leading-snug text-ink">Cinco camadas de prática</h3>
+                                <p class="mt-2.5 text-sm leading-relaxed text-muted">Ninguém decora gabarito: conferência, três revisões e desafio. Questões novas e embaralhadas a cada tentativa.</p>
+                            </article>
+                            <article class="rounded-3xl border border-ink/5 bg-white p-5 shadow-[0_14px_40px_-34px_rgba(30,52,107,0.5)] sm:p-6">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-extrabold tracking-[0.12em] text-leaf">04</span
+                                    ><span class="grid size-10 place-items-center rounded-xl bg-sage text-leaf"
+                                        ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb" aria-hidden="true">
+                                            <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path>
+                                            <path d="M9 18h6"></path>
+                                            <path d="M10 22h4"></path></svg
+                                    ></span>
+                                </div>
+                                <h3 class="mt-5 text-lg font-extrabold leading-snug text-ink">Errou? Aprende na hora</h3>
+                                <p class="mt-2.5 text-sm leading-relaxed text-muted">A resposta certa e a explicação aparecem enquanto o raciocínio ainda está fresco. O erro vira aprendizado, não nota vermelha.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="mx-auto mt-16 max-w-7xl rounded-[2rem] bg-white px-5 py-9 shadow-[0_20px_60px_-45px_rgba(30,52,107,0.45)] sm:px-10 sm:py-11">
+                        <div class="mx-auto max-w-2xl text-center">
+                            <span class="mx-auto grid size-11 place-items-center rounded-2xl bg-sage text-leaf"
+                                ><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award" aria-hidden="true">
+                                    <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+                                    <circle cx="12" cy="8" r="6"></circle></svg
+                            ></span>
+                            <h3 class="mt-4 text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">Cada conquista tem nome</h3>
+                            <p class="mt-2 text-sm leading-relaxed text-muted">Medalhas que celebram o progresso real — da primeira tentativa ao domínio do assunto.</p>
+                        </div>
+                        <div class="mt-8 grid gap-4 md:grid-cols-3">
+                            <div class="rounded-2xl border-2 border-dashed border-muted/30 bg-cream p-5 text-center">
+                                <span class="mx-auto grid size-12 place-items-center rounded-full border-2 border-muted/55 text-muted"
+                                    ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-medal" aria-hidden="true">
+                                        <path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15"></path>
+                                        <path d="M11 12 5.12 2.2"></path>
+                                        <path d="m13 12 5.88-9.8"></path>
+                                        <path d="M8 7h8"></path>
+                                        <circle cx="12" cy="17" r="5"></circle>
+                                        <path d="M12 18v-2h-.5"></path></svg
+                                ></span>
+                                <h4 class="mt-3 font-extrabold text-ink">Medalha de Tentativa</h4>
+                                <p class="mt-1 text-xs font-semibold text-muted">O primeiro passo</p>
+                                <p class="mt-2 text-sm leading-relaxed text-muted">Quando ele encara o tópico e começa o desafio.</p>
+                            </div>
+                            <div class="rounded-2xl border border-leaf/15 bg-sage p-5 text-center">
+                                <span class="mx-auto grid size-12 place-items-center rounded-full bg-white text-leaf"
+                                    ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="m9 12 2 2 4-4"></path></svg
+                                ></span>
+                                <h4 class="mt-3 font-extrabold text-ink">Medalha de Proficiência</h4>
+                                <p class="mt-1 text-xs font-semibold text-forest">Conceito compreendido</p>
+                                <p class="mt-2 text-sm leading-relaxed text-muted">Quando ele mostra que entendeu o conceito básico.</p>
+                            </div>
+                            <div class="rounded-2xl border border-ink bg-ink p-5 text-center text-white shadow-lg">
+                                <span class="mx-auto grid size-12 place-items-center rounded-full bg-white/10 text-cream"
+                                    ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg
+                                ></span>
+                                <h4 class="mt-3 font-extrabold text-cream">Medalha de Assunto Dominado</h4>
+                                <p class="mt-1 text-xs font-semibold text-sage">O troféu máximo</p>
+                                <p class="mt-2 text-sm leading-relaxed text-white/75">Quando prova que sabe usar o conteúdo em uma situação nova.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="bg-ink px-5 py-20 text-cream sm:px-8 sm:py-24 lg:px-10">
+                <div class="mx-auto max-w-7xl">
+                    <div class="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center lg:gap-20">
+                        <div>
+                            <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-sage">Mais tranquilidade para a família</p>
+                            <h2 class="mt-4 text-3xl font-extrabold leading-tight tracking-[-0.045em] text-cream sm:text-4xl"><span class="text-orange">Você não precisa dar aula.</span> Precisa saber o que está acontecendo.</h2>
+                        </div>
+                        <div>
+                            <p class="text-base leading-relaxed text-cream/80 sm:text-lg">Pare de perguntar "estudou?". Abra o painel pelo seu celular. Veja o que ele tinha para estudar e o que fez. Veja onde travou, os assuntos dominados e se o cronograma está em dia.</p>
+                            <p class="mt-4 text-base font-semibold leading-relaxed text-sage sm:text-lg">Você entra na conversa com informação, não com desconfiança. A Akili devolve o seu lugar de mãe ou pai.</p>
+                        </div>
+                    </div>
+                    <div class="mt-12 grid gap-3 md:grid-cols-3">
+                        <div class="rounded-3xl border border-white/10 bg-white/[0.06] p-6">
+                            <span class="grid size-10 place-items-center rounded-xl bg-white/10 text-orange"
+                                ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open-check" aria-hidden="true">
+                                    <path d="M12 21V7"></path>
+                                    <path d="m16 12 2 2 4-4"></path>
+                                    <path d="M22 6V4a1 1 0 0 0-1-1h-5a4 4 0 0 0-4 4 4 4 0 0 0-4-4H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h6a3 3 0 0 1 3 3 3 3 0 0 1 3-3h6a1 1 0 0 0 1-1v-1.3"></path></svg
+                            ></span>
+                            <h3 class="mt-4 font-extrabold text-cream">Apostila</h3>
+                            <p class="mt-2 text-sm leading-relaxed text-cream/65">O conteúdo está lá, mas não avisa se ele só decorou.</p>
+                        </div>
+                        <div class="rounded-3xl border border-white/10 bg-white/[0.06] p-6">
+                            <span class="grid size-10 place-items-center rounded-xl bg-white/10 text-orange"
+                                ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock3 lucide-clock-3" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 6v6h4"></path></svg
+                            ></span>
+                            <h3 class="mt-4 font-extrabold text-cream">Aula particular</h3>
+                            <p class="mt-2 text-sm leading-relaxed text-cream/65">Funciona, mas custa por hora — e o professor não está lá domingo às 21h.</p>
+                        </div>
+                        <div class="rounded-3xl border border-sage/30 bg-sage/[0.09] p-6">
+                            <span class="grid size-10 place-items-center rounded-xl bg-sage text-orange"
+                                ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles" aria-hidden="true">
+                                    <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path>
+                                    <path d="M20 2v4"></path>
+                                    <path d="M22 4h-4"></path>
+                                    <circle cx="4" cy="20" r="2"></circle></svg
+                            ></span>
+                            <h3 class="mt-4 font-extrabold text-sage">Akili</h3>
+                            <p class="mt-2 text-sm leading-relaxed text-cream/80">Menos por mês que uma aula particular. Avisa quando o assunto foi dominado e está sempre disponível.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="planos" class="scroll-mt-8 bg-cream px-5 py-20 sm:px-8 sm:py-24 lg:px-10">
+                <div class="mx-auto max-w-7xl">
+                    <div class="mx-auto max-w-3xl text-center">
+                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-leaf">Um trimestre com outro ritmo</p>
+                        <h2 class="mt-4 text-3xl font-extrabold leading-tight tracking-[-0.045em] text-ink sm:text-4xl">O trimestre já começou. As provas que decidem o ano estão chegando.</h2>
+                        <p class="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted sm:text-base">Cada semana sem método é uma semana de releitura que não fixa. A Akili entrega o 3º trimestre pronto para estudar, com acesso até 31/12/2026.</p>
+                    </div>
+                                        <div id="pacotes" class="mx-auto mt-10 grid max-w-4xl items-stretch gap-5 pt-4 lg:grid-cols-2" aria-live="polite">
+                        <p id="pacotes-status" class="col-span-full text-center text-sm font-semibold text-muted">Carregando planos…</p>
+                    </div>
+                    <div id="checkout" class="mx-auto mt-10 hidden max-w-xl scroll-mt-8">
+                        <form id="checkout-form" novalidate class="rounded-[1.8rem] border border-ink/8 bg-white p-5 shadow-[0_18px_55px_-42px_rgba(30,52,107,0.5)] sm:p-7">
+                            <p class="text-xs font-extrabold uppercase tracking-[0.17em] text-leaf">Pagamento com Pix</p>
+                            <h3 class="mt-2 text-xl font-extrabold tracking-tight text-ink">Assinar <span id="checkout-package-name"></span></h3>
+                            <p class="mt-2 text-sm leading-relaxed text-muted">Informe seu nome, e-mail e CPF. O valor da cobrança é definido pela Akili.</p>
+                            <div class="mt-5 grid gap-4">
+                                <label class="flex flex-col gap-1.5 text-xs font-bold text-ink">
+                                    Seu nome
+                                    <input id="checkout-name" name="name" required maxlength="255" autocomplete="name" placeholder="Como podemos chamar você?" class="min-h-12 rounded-xl border border-ink/10 bg-cream px-4 text-sm font-medium text-ink outline-none transition placeholder:text-muted/60 focus:border-leaf focus:ring-2 focus:ring-leaf/15" />
+                                    <span data-error-for="name" class="min-h-4 text-xs font-semibold text-orange"></span>
+                                </label>
+                                <label class="flex flex-col gap-1.5 text-xs font-bold text-ink">
+                                    Seu e-mail
+                                    <input id="checkout-email" name="email" type="email" required maxlength="255" autocomplete="email" inputmode="email" placeholder="voce@email.com" class="min-h-12 rounded-xl border border-ink/10 bg-cream px-4 text-sm font-medium text-ink outline-none transition placeholder:text-muted/60 focus:border-leaf focus:ring-2 focus:ring-leaf/15" />
+                                    <span data-error-for="email" class="min-h-4 text-xs font-semibold text-orange"></span>
+                                </label>
+                                <label class="flex flex-col gap-1.5 text-xs font-bold text-ink">
+                                    Seu CPF
+                                    <input id="checkout-cpf" name="cpf" required maxlength="14" inputmode="numeric" autocomplete="off" placeholder="000.000.000-00" class="min-h-12 rounded-xl border border-ink/10 bg-cream px-4 text-sm font-medium text-ink outline-none transition placeholder:text-muted/60 focus:border-leaf focus:ring-2 focus:ring-leaf/15" />
+                                    <span data-error-for="cpf" class="min-h-4 text-xs font-semibold text-orange"></span>
+                                </label>
+                            </div>
+                            <p data-error-for="package_uuid" class="mt-2 text-xs font-semibold text-orange"></p>
+                            <p data-error-for="form" class="mt-2 text-xs font-semibold text-orange" role="alert"></p>
+                            <button data-submit type="submit" class="mt-5 inline-flex min-h-13 w-full items-center justify-center gap-2 rounded-full bg-orange px-5 py-3.5 text-center text-xs font-extrabold tracking-[0.08em] text-white shadow-[0_12px_24px_-14px_rgba(244,116,30,0.75)] transition hover:-translate-y-0.5 hover:bg-orange/90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-orange">GERAR PIX</button>
+                            <p class="mt-3 text-center text-[11px] leading-relaxed text-muted">Depois do pagamento, o código de primeiro acesso chega no e-mail informado.</p>
+                        </form>
+                        <div id="pix-result" class="hidden rounded-[1.8rem] border border-ink/8 bg-white p-5 shadow-[0_18px_55px_-42px_rgba(30,52,107,0.5)] sm:p-7" aria-live="polite">
+                            <p class="text-xs font-extrabold uppercase tracking-[0.17em] text-leaf">Pix</p>
+                            <h3 id="pix-package" class="mt-2 text-xl font-extrabold tracking-tight text-ink"></h3>
+                            <p class="mt-3 text-sm font-semibold text-forest">Valor da cobrança: <span id="pix-amount"></span></p>
+                            <p id="pix-status" class="mt-3 text-sm leading-relaxed text-muted"></p>
+                            <div id="pix-pending" class="mt-5">
+                                <img id="pix-qr" alt="" width="280" height="280" class="mx-auto size-56 rounded-2xl border border-ink/10 bg-white p-2" />
+                                <p id="pix-countdown" class="mt-4 text-center text-sm font-bold text-forest"></p>
+                                <label class="mt-4 flex flex-col gap-1.5 text-xs font-bold text-ink">
+                                    Copia e cola
+                                    <input id="pix-code" readonly autocomplete="off" class="min-h-12 rounded-xl border border-ink/10 bg-cream px-4 text-sm font-medium text-ink outline-none" />
+                                </label>
+                                <button id="pix-copy" type="button" class="mt-4 inline-flex min-h-12 w-full items-center justify-center rounded-full bg-leaf px-5 text-xs font-extrabold tracking-[0.06em] text-white transition hover:bg-forest">COPIAR CÓDIGO PIX</button>
+                                <p id="pix-copy-feedback" class="mt-2 min-h-4 text-center text-xs font-semibold text-forest"></p>
+                            </div>
+                            <button id="pix-retry" type="button" class="mt-5 hidden min-h-12 w-full rounded-full bg-orange px-5 text-xs font-extrabold tracking-[0.06em] text-white transition hover:bg-orange/90">GERAR OUTRA COBRANÇA</button>
+                            <button id="pix-consult" type="button" class="mt-5 hidden min-h-12 w-full rounded-full border border-ink/10 bg-white px-5 text-xs font-extrabold tracking-[0.06em] text-ink transition hover:border-leaf/40">TENTAR CONSULTAR DE NOVO</button>
+                        </div>
+                    </div>
+                    <template id="pacote-template">
+                        <article class="relative flex h-full flex-col rounded-[1.8rem] border bg-white p-6 sm:p-8 border-ink/10 shadow-[0_16px_50px_-42px_rgba(30,52,107,0.4)]">
+                            <span data-badge class="absolute -top-3 left-6 hidden rounded-full bg-sage px-3 py-1 text-[10px] font-extrabold uppercase tracking-[0.13em] text-forest">Mais completo</span>
+                            <div class="flex items-start justify-between gap-3">
+                                <div>
+                                    <p class="text-xs font-extrabold uppercase tracking-[0.17em] text-leaf">Plano Akili</p>
+                                    <h3 data-name class="mt-2 text-2xl font-extrabold tracking-tight text-ink"></h3>
+                                </div>
+                                <span class="grid size-11 place-items-center rounded-2xl bg-sage text-leaf">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap" aria-hidden="true">
+                                        <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path>
+                                        <path d="M22 10v6"></path>
+                                        <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <p data-description class="mt-2 min-h-10 text-sm leading-relaxed text-muted"></p>
+                            <div class="mt-6 flex items-end gap-2">
+                                <span data-price class="text-[2.65rem] font-extrabold leading-none tracking-[-0.07em] text-ink"></span>
+                                <span data-period class="pb-1 text-xs font-medium text-muted"></span>
+                            </div>
+                            <p data-daily class="mt-3 text-sm font-bold text-forest"></p>
+                            <ul data-benefits class="mt-6 flex flex-col gap-3 border-t border-ink/8 pt-5 text-sm text-muted"></ul>
+                            <button data-cta type="button" class="mt-7 inline-flex min-h-13 w-full items-center justify-center gap-2 rounded-full bg-orange px-5 py-3.5 text-center text-xs font-extrabold tracking-[0.08em] text-white shadow-[0_12px_24px_-14px_rgba(244,116,30,0.75)] transition hover:-translate-y-0.5 hover:bg-orange/90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-orange">
+                                <span data-cta-label></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </article>
+                    </template>
+                    <template id="beneficio-template">
+                        <li class="flex items-start gap-2.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check mt-0.5 shrink-0 text-leaf" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>
+                            <span data-benefit></span>
+                        </li>
+                    </template>
+
+                    <p class="mt-6 flex items-center justify-center gap-2 text-center text-xs font-medium text-muted">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check text-leaf" aria-hidden="true">
+                            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                            <path d="m9 12 2 2 4-4"></path>
+                        </svg>
+                        Garantia de 7 dias para testar. Não gostou, devolvemos seu dinheiro.
+                    </p>
+                </div>
+            </section>
+            <section id="contato" class="scroll-mt-8 bg-sage px-5 py-20 sm:px-8 sm:py-24 lg:px-10">
+                <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1fr_0.92fr] lg:gap-16">
+                    <div>
+                        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-leaf">Pode perguntar</p>
+                        <h2 class="mt-4 text-3xl font-extrabold tracking-[-0.045em] text-ink sm:text-4xl">Dúvidas frequentes</h2>
+                        <div class="mt-7 flex flex-col gap-3">
+                            <details class="group rounded-2xl border border-white bg-cream px-5 py-4 open:shadow-[0_12px_35px_-30px_rgba(30,52,107,0.5)]">
+                                <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-sm font-bold text-ink marker:hidden [&amp;::-webkit-details-marker]:hidden">
+                                    Meu filho não vai usar.<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down shrink-0 text-leaf transition-transform group-open:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                                </summary>
+                                <p class="max-w-xl pt-3 text-sm leading-relaxed text-muted">O cronograma já vem pronto, as lições são curtas e as medalhas tornam o progresso visível. E você acompanha tudo pelo painel da família.</p>
+                            </details>
+                            <details class="group rounded-2xl border border-white bg-cream px-5 py-4 open:shadow-[0_12px_35px_-30px_rgba(30,52,107,0.5)]">
+                                <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-sm font-bold text-ink marker:hidden [&amp;::-webkit-details-marker]:hidden">
+                                    Ele já tem escola e ainda vai fazer mais?<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down shrink-0 text-leaf transition-transform group-open:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                                </summary>
+                                <p class="max-w-xl pt-3 text-sm leading-relaxed text-muted">A Akili não é "mais" conteúdo. É o conteúdo da escola estudado do jeito certo, substituindo horas de leitura que não fixam.</p>
+                            </details>
+                            <details class="group rounded-2xl border border-white bg-cream px-5 py-4 open:shadow-[0_12px_35px_-30px_rgba(30,52,107,0.5)]">
+                                <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-sm font-bold text-ink marker:hidden [&amp;::-webkit-details-marker]:hidden">
+                                    Serve para a escola dele?<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down shrink-0 text-leaf transition-transform group-open:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                                </summary>
+                                <p class="max-w-xl pt-3 text-sm leading-relaxed text-muted">O conteúdo segue a BNCC do 3º trimestre e o cronograma é adaptado às datas reais das provas dele.</p>
+                            </details>
+                            <details class="group rounded-2xl border border-white bg-cream px-5 py-4 open:shadow-[0_12px_35px_-30px_rgba(30,52,107,0.5)]">
+                                <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-sm font-bold text-ink marker:hidden [&amp;::-webkit-details-marker]:hidden">
+                                    Tem acessibilidade?<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down shrink-0 text-leaf transition-transform group-open:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                                </summary>
+                                <p class="max-w-xl pt-3 text-sm leading-relaxed text-muted">Sim. O formato permite estudar no próprio ritmo e ajuda alunos que perdem o foco, aprendem rápido ou são neurodivergentes.</p>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="self-start lg:pt-2">
+                        <div class="mb-5 flex items-center gap-3">
+                            <span class="grid size-11 place-items-center rounded-2xl bg-white text-leaf shadow-sm"
+                                ><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                    <path d="M12 17h.01"></path></svg
+                            ></span>
+                            <div>
+                                <p class="text-xs font-extrabold uppercase tracking-[0.17em] text-leaf">Uma conversa resolve</p>
+                                <h3 class="text-xl font-extrabold tracking-tight text-ink">Ainda tem dúvida?</h3>
+                            </div>
+                        </div>
+                        <p class="mb-5 text-sm leading-relaxed text-forest">Deixe seu WhatsApp. Nossa equipe pedagógica explica em 5 minutos como a Akili funciona para o ano do seu filho.</p>
+                        <form class="rounded-[1.8rem] border border-ink/8 bg-white p-5 shadow-[0_18px_55px_-42px_rgba(30,52,107,0.5)] sm:p-7">
+                            <div class="grid gap-4 sm:grid-cols-2">
+                                <label class="flex flex-col gap-1.5 text-xs font-bold text-ink sm:col-span-2">Seu nome<input required="" autocomplete="name" placeholder="Como podemos chamar você?" class="min-h-12 rounded-xl border border-ink/10 bg-cream px-4 text-sm font-medium text-ink outline-none transition placeholder:text-muted/60 focus:border-leaf focus:ring-2 focus:ring-leaf/15" name="name" /></label><label class="flex flex-col gap-1.5 text-xs font-bold text-ink">Seu WhatsApp<input required="" type="tel" autocomplete="tel" inputmode="tel" placeholder="(11) 99999-9999" class="min-h-12 rounded-xl border border-ink/10 bg-cream px-4 text-sm font-medium text-ink outline-none transition placeholder:text-muted/60 focus:border-leaf focus:ring-2 focus:ring-leaf/15" name="phone" /></label
+                                ><label class="flex flex-col gap-1.5 text-xs font-bold text-ink"
+                                    >Ano do filho<select required="" name="grade" class="min-h-12 rounded-xl border border-ink/10 bg-cream px-4 text-sm font-medium text-ink outline-none transition focus:border-leaf focus:ring-2 focus:ring-leaf/15">
+                                        <option value="" disabled="" selected="">Selecione o ano</option>
+                                        <option value="4º">4º ano</option>
+                                        <option value="8º">8º ano</option>
+                                    </select></label
+                                >
+                            </div>
+                            <button type="submit" class="mt-5 inline-flex min-h-13 w-full items-center justify-center gap-2 rounded-full bg-leaf px-5 py-3.5 text-center text-xs font-extrabold tracking-[0.06em] text-white transition hover:bg-forest focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-leaf">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg> FALAR COM A EQUIPE NO WHATSAPP
+                            </button>
+                            <p aria-live="polite" class="mt-3 min-h-5 text-center text-xs leading-relaxed text-muted">Nossa equipe pedagógica explica em 5 minutos como a Akili funciona.</p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <footer class="bg-ink px-5 py-7 text-cream sm:px-8 lg:px-10">
+                <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
+                    <a href="#inicio" class="inline-flex items-center gap-2.5 text-cream" aria-label="Akili, início"
+                        ><span class="grid size-10 place-items-center rounded-2xl bg-leaf text-white shadow-sm"
+                            ><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles" aria-hidden="true">
+                                <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path>
+                                <path d="M20 2v4"></path>
+                                <path d="M22 4h-4"></path>
+                                <circle cx="4" cy="20" r="2"></circle></svg></span
+                        ><span class="text-[1.55rem] font-extrabold tracking-[-0.07em]">akili</span></a
+                    >
+                    <p class="text-center text-xs text-cream/55">© 2026 Akili. Aprender de verdade, no seu ritmo.</p>
+                    <a href="#inicio" class="text-xs font-semibold text-sage transition hover:text-cream">Voltar ao início ↑</a>
+                </div>
+            </footer>
+        </main>
+        <script>
+            import { mountPackages } from "../scripts/packages";
+            mountPackages();
+        </script>
+    </body>
+</html>

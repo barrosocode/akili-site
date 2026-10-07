@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@import "@fontsource/nunito/400.css";
+@import "@fontsource/nunito/500.css";
+@import "@fontsource/nunito/600.css";
+@import "@fontsource/nunito/700.css";
+@import "@fontsource/nunito/800.css";
+@import "@fontsource/baloo-2/700.css";
+@import "@fontsource/baloo-2/800.css";
+
+@theme {
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
+  --font-baloo: "Baloo 2", ui-sans-serif, system-ui, sans-serif;
+  --color-cream: #fbf9ed;
+  --color-ink: #1e346b;
+  --color-leaf: #33a340;
+  --color-sage: #e6f8e6;
+  --color-forest: #09471f;
+  --color-orange: #f4741e;
+  --color-muted: #5f6a7b;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-baloo);
+  }
+}

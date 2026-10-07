@@ -6,6 +6,12 @@
 # Node artifact files
 node_modules/
 dist/
+.astro/
+
+# Local environment
+.env
+.env.*
+!.env.example
 
 # Compiled Java class files
 *.class
